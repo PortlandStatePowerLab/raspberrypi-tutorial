@@ -2,7 +2,7 @@
 General description of setting up a Raspberry Pi for project development.
 
 
-##CLion IDE Remote Development Instructions for Raspi Zero W 
+## CLion IDE Remote Development Instructions for Raspi Zero W 
 Unfortunately, VSCode's ssh-based remote development system does not support the architecture of the Raspi Zero. CLion's does, however. Here are some instructions for getting it working. This tutorial assumes that you have already done the following:
 
 * Downloaded the CLion IDE
