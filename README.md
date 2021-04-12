@@ -1,6 +1,20 @@
 # raspberrypi-tutorial
 General description of setting up a Raspberry Pi for project development.
 
+## Installing Raspbian
+Setting up a raspberry pi from scratch is detailed [headless pi setup](https://desertbot.io/blog/headless-pi-zero-w-wifi-setup-windows). While the setup is specific to windows, each step is applicable to any operating system. I have highlighted the important components, but you should follow the more detailed post for specifics.
+
+- Download Raspbian Lite](https://downloads.raspberrypi.org/raspios_lite_armhf/images/raspios_lite_armhf-2021-03-25/2021-03-04-raspios-buster-armhf-lite.zip)
+- Download and install an imagining software. We used [balena etcher](https://www.balena.io/etcher/) referenced in the headless pi setup tutorial.
+- Enable SSH by creating a blank ssh file in root folder
+- Add Networking Info by creating a wpa_supplicant.conf file in the root directory and filling in the required fields. 
+- **No need to install Bonjour** we will just log into the local router to determine raspi ip address.
+- Eject disk and boot the raspberry pi
+- Log into local router and get raspi ip address
+  - Open browser and go to 192.168.0.1 or 192.168.1.1 which are the default router ip address
+  - Log in to router dashboard
+    - Username: admin
+    - Password: password
 
 ## CLion IDE Remote Development Instructions for Raspi Zero W 
 Unfortunately, VSCode's ssh-based remote development system does not support the architecture of the Raspi Zero. CLion's does, however. Here are some instructions for getting it working. This tutorial assumes that you have already done the following:
