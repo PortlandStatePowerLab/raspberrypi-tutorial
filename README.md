@@ -24,5 +24,18 @@ From the Dropdown menu that appears, select `Remote Host`. Enter your desired na
 ![sshConfig](https://user-images.githubusercontent.com/72573224/114450945-80e23580-9b8b-11eb-959a-3ac719b7b906.png)
 
 
-Hit `Apply` then `OK`. Now, CLion will automatically search for a cmake installation. You need to manually select one instead. To the right of the `Cmake:` field, hit the button labeled `...`. Now select the directory of your `cmake 3.18` installation. It should be `\home\pi\temp\cmake-3.18.4\bin\cmake`. Hit `Apply`. 
+Hit `Apply` then `OK`. 
+
+Now, CLion will automatically search for a cmake installation. You need to manually select one instead. To the right of the `Cmake:` field, hit the button labeled `...` Now select the directory of your `cmake 3.18` installation. It should be `\home\pi\temp\cmake-3.18.4\bin\cmake`. Like so:
+
+![CMakePath](https://user-images.githubusercontent.com/72573224/114451617-4c22ae00-9b8c-11eb-9635-633e7bc9ee89.png)
+
+
+Hit `Apply`. 
+
+Now we need to configure CMake. Right under `Toolchains` in the left hand side menu bar, select `CMake`. Hit `+` again, to create a new CMake profile. Name it whatever you want, but it should be related to your toolchain name. Next to build type, you should probably select `Debug` though in the screenshot below I have `Default` selected. The important thing here is that next to `Toolchain` you need to select the toolchain you've just created, as shown here: 
+
+![cmakeChooseToolchain](https://user-images.githubusercontent.com/72573224/114452814-bb4cd200-9b8d-11eb-8195-ae46027cbfa9.png)
+
+For build directory, you can let CLion generate a name automatically, or you can name it yourself. An important thing to remember is that if you've done this before, and already created a build directory, you may need to either select it if you want to continue overwriting it, or create a new one. 
 
