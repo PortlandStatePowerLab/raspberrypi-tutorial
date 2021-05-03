@@ -41,7 +41,7 @@ This also includes the djarek/certify library for ssl verification that needs to
 
 ```shell
 cd ~/temp
-wget https://dl.bintray.com/boostorg/release/1.75.0/source/boost_1_75_0.tar.gz
+wget https://boostorg.jfrog.io/artifactory/main/release/1.75.0/source/boost_1_75_0.tar.gz
 tar -xf boost_1_75_0.tar.gz
 cd boost_1_75_0 && ./bootstrap.sh 
 cd libs && git clone https://github.com/djarek/certify.git && cd ..
