@@ -51,7 +51,7 @@ cd boost_1_75_0 && ./bootstrap.sh
 
 ```shell
 cd ~/temp
-wget https://mirror.jframeworks.com/apache//xerces/c/3/sources/xerces-c-3.2.3.tar.gz
+wget https://ftp.wayne.edu/apache//xerces/c/3/sources/xerces-c-3.2.3.tar.gz
 tar -xf xerces-c-3.2.3.tar.gz
 cd xerces-c-3.2.3 && ./configure --prefix=/usr && make && sudo make install
 ```
