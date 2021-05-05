@@ -17,6 +17,19 @@ Setting up a raspberry pi from scratch is detailed [headless pi setup](https://d
   - Select wifi devices and record raspi ip address
 - SSH into raspi from the terminal using `ssh pi@<ip address>` with password *raspberry*
 
+## Increase Swap memory
+In light of installation issues which I believe stem from lack of RAM on the earlier versions of raspberry pi's or possibly poor memory managment I have found and [article](https://pimylifeup.com/raspberry-pi-swap-file/) that increases the swap memory at the cost of disk space. This is essentially converting disk to slow RAM, but it does appear to aleviate some of the installation issues we have been experiancing. Change the following value within dphys-swapfile:
+
+- CONF_SWAPSIZE=100 -> CONF_SWAPSIZE=1024
+
+```shell
+sudo dphys-swapfile swapoff
+sudo nano /etc/dphys-swapfile
+sudo dphys-swapfile setup
+sudo dphys-swapfile swapon
+sudo reboot
+```
+
 ## Dependancy Installation
 In an effort to make development and debugging easier. All raspberry pi's will install all the dependancies as a base.
 
@@ -41,9 +54,9 @@ This also includes the djarek/certify library for ssl verification that needs to
 
 ```shell
 cd ~/temp
-wget https://boostorg.jfrog.io/artifactory/main/release/1.75.0/source/boost_1_75_0.tar.gz
+wget https://boostorg.jfrog.io/artifactory/main/release/1.76.0/source/boost_1_76_0.tar.gz
 tar -xf boost_1_75_0.tar.gz
-cd boost_1_75_0 && ./bootstrap.sh 
+cd boost_1_76_0 && ./bootstrap.sh 
 ./b2 && sudo ./b2 install
 ```
 
