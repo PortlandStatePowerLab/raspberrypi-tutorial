@@ -55,7 +55,7 @@ This also includes the djarek/certify library for ssl verification that needs to
 ```shell
 cd ~/temp
 wget https://boostorg.jfrog.io/artifactory/main/release/1.76.0/source/boost_1_76_0.tar.gz
-tar -xf boost_1_7_0.tar.gz
+tar -xf boost_1_76_0.tar.gz
 cd boost_1_76_0 && ./bootstrap.sh 
 ./b2 && sudo ./b2 install
 ```
