@@ -79,6 +79,8 @@ sudo apt upgrade -y
 ```
 
 ## CLion IDE Remote Development Instructions for Raspi Zero W 
+CLion is JetBrains's C++ IDE. PSU students/staff may access a free educational license, which can be applied for here: https://www.jetbrains.com/community/education/#students
+
 Unfortunately, VSCode's ssh-based remote development system does not support the architecture of the Raspi Zero. CLion's does, however. Here are some instructions for getting it working. This tutorial assumes that you have already done the following:
 
 * Downloaded the CLion IDE
