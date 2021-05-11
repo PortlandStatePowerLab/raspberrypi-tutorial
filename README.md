@@ -35,8 +35,8 @@ In an effort to make development and debugging easier. All raspberry pi's will i
 
 ```shell
 sudo apt update -y
-sudo apt-get install -y build-essential wget git pkg-config  cmake libssl-dev libmodbus-dev
 sudo apt upgrade -y
+sudo apt-get install -y build-essential wget git pkg-config  cmake python3 python3-dev libssl-dev libmodbus-dev
 mkdir ~/temp
 ```
 
@@ -58,6 +58,15 @@ wget https://boostorg.jfrog.io/artifactory/main/release/1.76.0/source/boost_1_76
 tar -xf boost_1_76_0.tar.gz
 cd boost_1_76_0 && ./bootstrap.sh 
 ./b2 && sudo ./b2 install
+
+```
+
+We have also added the boost python libs to make implementation testing of each of our actors easier. The following installs the required boost libs. 
+
+```shell
+cd ~/temp/boost_1_76_0
+./bootstrap.sh --with-python=/usr/bin/python3
+./b2 --with-python install
 ```
 
 ### XercesC
