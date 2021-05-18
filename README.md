@@ -113,9 +113,10 @@ From the Dropdown menu that appears, select `Remote Host`. Enter your desired na
 
 Hit `Apply` then `OK`. 
 
-Now, CLion will automatically search for a cmake installation. You need to manually select one instead. To the right of the `Cmake:` field, hit the button labeled `...` Now select the directory of your `cmake 3.18` installation. It should be `\home\pi\temp\cmake-3.18.4\bin\cmake`. Like so:
+Now, CLion will automatically search for a cmake installation. You need to manually select one instead. To the right of the `Cmake:` field, hit the button labeled `...` Now select the directory of your `cmake 3.18` installation. It should be `\usr\local\bin\cmake`. Like so:
 
-![CMakePath](https://user-images.githubusercontent.com/72573224/114451617-4c22ae00-9b8c-11eb-9635-633e7bc9ee89.png)
+![correc_318_bin_tylors](https://user-images.githubusercontent.com/72573224/118702266-902b5300-b7c9-11eb-8510-60ba3de9e47f.png)
+
 
 
 Hit `Apply`. 
