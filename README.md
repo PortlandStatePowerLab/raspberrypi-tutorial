@@ -50,7 +50,7 @@ cd cmake-3.18.4 && cmake . && make && sudo make install
 ```
 
 ### Boost
-This also includes the djarek/certify library for ssl verification that needs to be manually added to the boost folder.
+If the respberry pi supports boost 1.72+ then an apt-get install will be sufficient.
 
 ```shell
 cd ~/temp
