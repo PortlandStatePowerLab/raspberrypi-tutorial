@@ -66,7 +66,7 @@ We have also added the boost python libs to make implementation testing of each 
 ```shell
 cd ~/temp/boost_1_76_0
 ./bootstrap.sh --with-python=/usr/bin/python3
-./b2 --with-python install
+sudo ./b2 --with-python install
 ```
 
 ### XercesC
