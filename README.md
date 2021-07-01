@@ -87,6 +87,24 @@ sudo apt update -y
 sudo apt upgrade -y
 ```
 
+## Serial Port UART Configuration for Pi Zeros
+In order to communicate via RS485, we use a specialized Raspi HAT RS-485 Auto-Switching Serial Converter with a MAX485 chip. This requires the use of the raspi's serial communication port. In order to configure the pi to use the correct port (because there are 2, and the one we want to use is, be default, reserved for bluetooth communication) we need to do a few things. 
+
+The first thing is, from the command line via ssh, to `sudo raspi-config` to access the configuration menu. Under "Interface Options," we will go to "Serial Port." In response to the question "Would you like a login shell to be accessible over serial?" we want to say "No." The next question is "Would you liek the serial port hardware to be enabled?" and we will select "Yes."
+
+Next, go to your "boot," directory with `cd /boot/` and open the "config.txt," file with nano or vim, like this: `sudo vim config.txt`
+
+Now at the very end of the file add the line:
+```bash
+dtoverlay=disable-bt
+```
+and save it. 
+
+Then from the command line enter: `sudo systemctl disable hciuart` and then reboot the raspi with `sudo reboot`
+
+Once the raspi has rebooted, you can check if you were successful with the command `ls -l /dev` and scroll through to find a line that says `serial0 -> ttyAMA0` which confirms that the primary UART on the raspi (serial0) is pointing to the full UART (AMA0)
+
+
 ## CLion IDE Remote Development Instructions for Raspi Zero W 
 CLion is JetBrains's C++ IDE. PSU students/staff may access a free educational license, which can be applied for here: https://www.jetbrains.com/community/education/#students
 
