@@ -50,7 +50,7 @@ cd cmake-3.18.4 && cmake . && make && sudo make install
 ```
 
 ### Boost
-If the respberry pi supports boost 1.72+ then an apt-get install will be sufficient. `cd ~/temp && wget https://boostorg.jfrog.io/artifactory/main/release/1.76.0/source/boost_1_76_0.tar.gz && cd boost_1_76_0 && ./bootstrap.sh && ./b2 && sudo ./b2 install`
+If the respberry pi supports boost 1.72+ then an apt-get install will be sufficient. `cd ~/temp && wget https://boostorg.jfrog.io/artifactory/main/release/1.76.0/source/boost_1_76_0.tar.gz && tar -xf boost_1_76_0.tar.gz && cd boost_1_76_0 && ./bootstrap.sh && ./b2 && sudo ./b2 install`
 
 ```shell
 cd ~/temp
