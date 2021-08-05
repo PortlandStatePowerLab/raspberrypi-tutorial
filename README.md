@@ -41,6 +41,7 @@ mkdir ~/temp
 ```
 
 ### CMake
+Copy paste: `cd ~/temp && wget https://github.com/Kitware/CMake/releases/download/v3.18.4/cmake-3.18.4.tar.gz && tar -xf cmake-3.18.4.tar.gz && cd cmake-3.18.4 && cmake . && make && sudo make install `
 
 ```shell
 cd ~/temp
