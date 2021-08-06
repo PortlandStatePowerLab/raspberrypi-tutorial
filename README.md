@@ -63,7 +63,7 @@ cd boost_1_76_0 && ./bootstrap.sh
 ```
 
 
-We have also added the boost python libs to make implementation testing of each of our actors easier. The following installs the required boost libs. `cd ~/temp/boost_1_76_0 && ./bootstrap.sh --with-python=/usr/bin/python3 && sudo ./b2 --with-python install'
+We have also added the boost python libs to make implementation testing of each of our actors easier. The following installs the required boost libs. `cd ~/temp/boost_1_76_0 && ./bootstrap.sh --with-python=/usr/bin/python3 && sudo ./b2 --with-python install`
 
 ```shell
 cd ~/temp/boost_1_76_0
