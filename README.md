@@ -72,6 +72,7 @@ sudo ./b2 --with-python install
 ```
 
 ### XercesC
+`cd ~/temp && wget https://ftp.wayne.edu/apache//xerces/c/3/sources/xerces-c-3.2.3.tar.gz && tar -xf xerces-c-3.2.3.tar.gz && cd xerces-c-3.2.3 && ./configure --prefix=/usr && make && sudo make install`
 
 ```shell
 cd ~/temp
