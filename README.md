@@ -31,7 +31,7 @@ sudo reboot
 ```
 
 ## Dependancy Installation
-In an effort to make development and debugging easier. All raspberry pi's will install all the dependancies as a base.
+In an effort to make development and debugging easier. All raspberry pi's will install all the dependancies as a base. Copy Paste: `sudo apt update -y && sudo apt upgrade -y && sudo apt-get install -y build-essential wget git pkg-config  cmake python3 python3-dev libssl-dev libmodbus-dev && mkdir ~/temp`
 
 ```shell
 sudo apt update -y
