@@ -108,6 +108,9 @@ Then from the command line enter: `sudo systemctl disable hciuart` and then rebo
 Once the raspi has rebooted, you can check if you were successful with the command `ls -l /dev` and scroll through to find a line that says `serial0 -> ttyAMA0` which confirms that the primary UART on the raspi (serial0) is pointing to the full UART (AMA0)
 
 
+## Serial Port UART Configuration for Pi 4B's
+Our lives are made easier by the fact that the Pi 4's have 6 UARTs. Therefore, in order to use a HAT via the GPIO pins, all you need to do is edit the port. Change it from `dev/ttyAMA0` to `dev/ttyS0` and you're all good :)
+
 ## CLion IDE Remote Development Instructions for Raspi Zero W 
 CLion is JetBrains's C++ IDE. PSU students/staff may access a free educational license, which can be applied for here: https://www.jetbrains.com/community/education/#students
 
