@@ -92,7 +92,7 @@ cd xerces-c-3.2.3 && ./configure --prefix=/usr && make && sudo make install
 
 ```shell
 cd
-rm -rf ~/temp
+sudo rm -rf ~/temp
 sudo apt update -y
 sudo apt upgrade -y
 ```
