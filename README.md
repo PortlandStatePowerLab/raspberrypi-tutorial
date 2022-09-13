@@ -148,6 +148,38 @@ Once the raspi has rebooted, you can check if you were successful with the comma
 ## Serial Port UART Configuration for Pi 4B's
 Our lives are made easier by the fact that the Pi 4's have 6 UARTs. Therefore, in order to use a HAT via the GPIO pins, all you need to do is edit the port. Change it from `dev/ttyAMA0` to `dev/ttyS0` and you're all good :)
 
+## Cloning Github Repository
+Once everything is installed and the Pi is setup, the `doe-egot-system` Github repository should be cloned to the Pi.
+- Navigate to the pi folder 
+- Copy and paste: `git clone https://github.com/PortlandStatePowerLab/doe-egot-system.git`
+
+To navigate Github branches on the Pi:
+- Navigate to the doe folder: `cd doe-egot-system`
+- Add the build directory: `mkdir build`
+- Check what branch you're in: `git branch -a`
+  - This will show all the branches and the highlighted one is where you currently are
+- To switch to the main branch: `git checkout main`
+- To see all commits: `git log`
+
+Use CMake to build:
+- In the doe-egot-system, use CMake to get setup for build: `cmake -S . -B build`
+  - Make sure you are in the main branch!
+  - S is for source (CMake.txt file)
+  - B is for build location (which is the build directory)
+  - The dot indicates the current directory
+  - To stop the build, press `ctrl + C`
+ 
+Use CMake to compile:
+- To compile, type: `cmake -- build .` or just `make`
+
+Run and change binary files:
+- To run a binary file (usually displayed as a different color than other directoris; files don't end in .txt, .csv, etc): `./name of binary file`
+- To switch a binary file to executable or non executable:
+  - `chmod -x name`
+  - `chmod +x name`
+
+
+
 
 
 
