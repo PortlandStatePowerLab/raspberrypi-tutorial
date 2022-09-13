@@ -38,7 +38,7 @@ Alternative Setup Using a Monitor:
 - Use this MAC address to register with CAT so that the Pi can be connected to the PSU-IoT network.
 - Once connected to the PSU-IoT network, type `ifconfig` in the command line again and find the current IP address listed under `wlan0`. This will be the address used to ssh into the Pi.
 
-## SSH Into the PI
+## SSH Into the Pi
 There are two ways to ssh into the Pi. One is with the IP address, and the other is with the hostname.
 - IP Address: When connected to the PSU-IoT network, the Pi can only be accessed via IP address. 
   - To ssh in, open command prompt on your computer and type: `ssh pi@[IP address]`. For example: `ssh pi@172.30.8.180`. 
@@ -147,6 +147,7 @@ Once the raspi has rebooted, you can check if you were successful with the comma
 
 ## Serial Port UART Configuration for Pi 4B's
 Our lives are made easier by the fact that the Pi 4's have 6 UARTs. Therefore, in order to use a HAT via the GPIO pins, all you need to do is edit the port. Change it from `dev/ttyAMA0` to `dev/ttyS0` and you're all good :)
+
 
 
 
