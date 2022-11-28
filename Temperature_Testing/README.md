@@ -1,5 +1,6 @@
 ## References
 [Rapsberry Pi Temperature Monitor](https://linuxhint.com/raspberry_pi_temperature_monitor/)
+
 [How to Write Data to a File on the Raspberry Pi](https://www.circuitbasics.com/writing-data-to-files-on-the-raspberry-pi/)
 
 ## CPU Temperature Sensor Code and Process
