@@ -1,6 +1,6 @@
 # Errors Nicole encountered while setting up the Raspberry Pis:
 
-## Errors with getting cmake to build
+## Errors with building cmake files
 When trying to execute: 
 ```
 $ cmake --build
@@ -11,7 +11,7 @@ This was fixed by reinstalling all the packages for Cmake and boost. I believe t
 Similarly, on another Pi, the error message "Could not find a package configuration file proivded by 'boost_filesystem'" popped up. This issue was also resolved by reinstalling boost through the process in the tutorial.
 
 
-## Errors with getting a Pi to connect to the PSU-IoT network
+## Errors with connecting a Pi to the PSU-IoT network
 Here is a list of things to check if the Pi will not connect to the IoT network:
 * Make sure the MAC address is registered and that the correct pre-shared key is being used.
 * Check the date and time of the Raspberry Pi! If it is off from the actual date/time (even by a few seconds), it will have trouble with connecting. [You can manually reset the date/time.](https://raspberrytips.com/set-date-time-raspberry-pi/#:~:text=NTP%20is%20enabled%20by%20default,%3AMM%3ASS%27%E2%80%9C.)
