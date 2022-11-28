@@ -12,3 +12,13 @@ Similarly, on another Pi, the error message "Could not find a package configurat
 
 
 ## Errors with getting a Pi to connect to the PSU-IoT network
+Here is a list of things to check if the Pi will not connect to the IoT network:
+* Make sure the MAC address is registered and that the correct pre-shared key is being used.
+* Check the date and time of the Raspberry Pi! If it is off from the actual date/time (even by a few seconds), it will have trouble with connecting. [You can manually reset the date/time.](https://raspberrytips.com/set-date-time-raspberry-pi/#:~:text=NTP%20is%20enabled%20by%20default,%3AMM%3ASS%27%E2%80%9C.)
+* Check the Pi for updates.
+
+
+## Errors with ssh into Pi
+* Make sure the Pi is connected to power.
+* Check that the IP address has been typed in correctly (you cannot ssh via hostname on the PSU-IoT network).
+* If you still cannot connect, the IP address may have changed. Plug into a monitor to find the new IP address.
