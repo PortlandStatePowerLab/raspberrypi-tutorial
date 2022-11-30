@@ -17,7 +17,7 @@ The official [Raspberry Pi website](https://www.raspberrypi.com/documentation/co
 - From the main menu, select the "CHOOSE STORAGE" menu and select the SD card.
 - Click "WRITE" and eject the SD card when it is complete.
 - Place SD card into the Raspberry Pi and boot it by connecting it to a power source.
-- If you forget to add these settings during the installation process, they can later be once the Raspberry Pi has the SD card in it. Use the command *sudo raspi-config* and navigate through the window to select the previously mentioned options.
+- If you forget to add these settings during the installation process, they can later be once the Raspberry Pi has the SD card in it. Use the command `sudo raspi-config` and navigate through the window to select the previously mentioned options.
 
 To continue with a Headless (no monitor) Setup:
 - Log into local router and get raspi ip address
